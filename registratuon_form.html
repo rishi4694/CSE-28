@@ -1,0 +1,50 @@
+ <!DOCTYPE html>
+ <html>
+ <head>
+     <title>Student Registration Form</title>
+ </head>
+ <body>
+     <h1 align="center">Student Registration Form</h2>
+     <fieldset>
+     <form method="post" action="#">
+         <label>Full Name:</label>
+         <input type="text" name="fullname" placeholder="Enter your full name"
+ required><br><br>
+ 
+         <label>Email:</label>
+         <input type="email" name="email" placeholder="Enter valid email address"
+ required><br><br>
+ 
+         <label>password:</label>
+         <input type="password" name="password" placeholder="Enter password"
+ required><br><br>
+
+         <label>Gender:</label>
+         <input type="radio" name="gender" value="male"> Male
+         <input type="radio" name="gender" value="female"> Female
+         <input type="radio" name="gender" value="other"> Other<br><br>
+
+         <label>course:</label>
+         <select name="course" required>
+             <option value="">Select Course</option>
+             <option value="bca">BCA</option>
+             <option value="btech">B.Tech</option>
+             <option value="bcom">B.com</option>
+         </select><br><br>
+
+         <label>contact No:</label>
+         <input type="tel" name="contact" minlength="10" maxlength="10"
+placeholder="Enter phone number"required><br><br>
+ 
+         <label>Address:</label><br>
+         <textarea name="address" rows="3" cols="30" 
+placeholder="Enter your address"></textarea><br><br>
+ 
+         <input type="submit" value="Register">
+         <input type="reset" value="clear">
+    </form>
+    </fieldset>
+    <br>
+    <center>©2025 Student Registration Portal</center>
+ </body>
+ </html>
