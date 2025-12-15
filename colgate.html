@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Colgate Inspired Dental Care</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #f9f9f9;
+      color: #333;
+    }
+    header {
+      background-color: #d91f27;
+      color: white;
+      padding: 15px 30px;
+      text-align: center;
+      font-size: 2em;
+      letter-spacing: 1.5px;
+    }
+    nav {
+      background: #b71c23;
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+      padding: 12px 0;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1.1em;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #ffe600;
+    }
+    .hero {
+      background: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1350&q=80')
+        center/cover no-repeat;
+      height: 400px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 2.5em;
+      font-weight: bold;
+      text-shadow: 2px 2px 6px #000;
+    }
+    section {
+      max-width: 1100px;
+      margin: 30px auto;
+      padding: 0 20px;
+    }
+    h2 {
+      color: #d91f27;
+      margin-bottom: 15px;
+    }
+    .product-gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+      gap: 20px;
+    }
+    .product-card {
+      background: white;
+      padding: 15px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgb(0 0 0 / 0.1);
+      text-align: center;
+      transition: transform 0.3s, box-shadow 0.3s;
+      cursor: pointer;
+    }
+    .product-card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 20px rgb(0 0 0 / 0.2);
+    }
+    .product-card img {
+      width: 100%;
+      border-radius: 5px;
+    }
+    .product-card h3 {
+      margin-top: 10px;
+      color: #b71c23;
+    }
+    .faq-section {
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+    }
+    .faq {
+      margin-bottom: 10px;
+    }
+    summary {
+      font-weight: bold;
+      cursor: pointer;
+      padding: 10px;
+      background: #d91f27;
+      color: white;
+      border-radius: 4px;
+      outline: none;
+    }
+    details[open] summary {
+      border-bottom-left-radius: 0;
+      border-bottom-right-radius: 0;
+    }
+    details p {
+      padding: 10px;
+      border: 1px solid #d91f27;
+      border-top: none;
+      margin: 0;
+      border-bottom-left-radius: 4px;
+      border-bottom-right-radius: 4px;
+      background: #fee;
+    }
+    footer {
+      text-align: center;
+      padding: 15px 10px;
+      background: #b71c23;
+      color: white;
+      margin-top: 40px;
+      font-size: 0.9em;
+    }
+  </style>
+</head>
+<body>
+
+<header>Colgate Inspired Care</header>
+
+<nav>
+  <a href="#home">Home</a>
+  <a href="#products">Products</a>
+  <a href="#about">About Us</a>
+  <a href="#gallery">Gallery</a>
+  <a href="#faq">FAQ</a>
+  <a href="#services">Services</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<div class="hero">
+  Bright Smiles, Healthy Teeth
+</div>
+
+<section id="products">
+  <h2>Our Products</h2>
+  <div class="product-gallery">
+    <div class="product-card" tabindex="0">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkGhBIB0MimoRaBs7tefCq55oJH7kQ_yj3vQ&s" alt="Colgate Toothpaste" />
+      <h3>Colgate Toothpaste</h3>
+      <p>For fresh breath and cavity protection.</p>
+    </div>
+    <div class="product-card" tabindex="0">
+      <img src="https://www.colgateinvestors.co.in/media/2848/colgate-pro-clinical-150.jpg" alt="Electric Toothbrush" />
+      <h3>Electric Toothbrush</h3>
+      <p>Advanced plaque removal technology.</p>
+    </div>
+    <div class="product-card" tabindex="0">
+      <img src="https://www.silkrute.com/images/detailed/3331/71kLtKD2LNL_6q5s-uk.jpg" alt="Mouthwash" />
+      <h3>Mouthwash</h3>
+      <p>Kills germs for long-lasting freshness.</p>
+    </div>
+  </div>
+</section>
+
+<section id="gallery">
+  <h2>Gallery</h2>
+  <div class="product-gallery">
+    <img src="" alt="Dental Care" style="border-radius:8px; box-shadow:0 2px 8px rgba(0,0,0,0.15);"/>
+    <img src="" alt="Toothbrush" style="border-radius:8px; box-shadow:0 2px 8px rgba(0,0,0,0.15);"/>
+    <img src="" alt="Smiling Kid" style="border-radius:8px; box-shadow:0 2px 8px rgba(0,0,0,0.15);"/>
+  </div>
+</section>
+
+<section id="faq" class="faq-section">
+  <h2>Frequently Asked Questions</h2>
+  <details class="faq">
+    <summary>How often should I brush my teeth?</summary>
+    <p>Brush at least twice a day, morning and night, for two minutes each time.</p>
+  </details>
+  <details class="faq">
+    <summary>What toothpaste is best for sensitive teeth?</summary>
+    <p>Look for toothpaste specially formulated for sensitive teeth, like Colgate Sensitive.</p>
+  </details>
+  <details class="faq">
+    <summary>Does mouthwash replace brushing?</summary>
+    <p>No, mouthwash complements brushing but does not replace it. Brushing removes plaque physically.</p>
+  </details>
+</section>
+
+<section id="contact">
+  <h2>Contact Us</h2>
+  <form style="max-width: 400px; margin: auto; background: white; padding: 20px; border-radius: 8px; box-shadow: 0 3px 10px rgba(0,0,0,0.1);">
+    <label for="name">Name</label><br />
+    <input type="text" id="name" name="name" required style="width: 100%; margin-bottom: 10px; padding: 8px;"/>
+    
+    <label for="email">Email</label><br />
+    <input type="email" id="email" name="email" required style="width: 100%; margin-bottom: 10px; padding: 8px;"/>
+    
+    <label for="message">Message</label><br />
+    <textarea id="message" name="message" rows="4" required style="width: 100%; padding: 8px;"></textarea>
+    
+    <button type="submit" style="background:#d91f27; color: white; border:none; padding: 10px 20px; margin-top: 10px; cursor: pointer; border-radius: 4px;">Send</button>
+  </form>
+</section>
+
+<footer>
+  &copy; 2025 Colgate Inspired Care. All rights reserved.
+</footer>
+
+</body>
+</html>
